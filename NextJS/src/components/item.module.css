@@ -1,0 +1,63 @@
+.item {
+  animation: showItem 0.5s linear;
+  color: #333;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.itemBtn {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, 40px);
+  opacity: 0;
+  transition: all 0.5s;
+  background-color: #ffffff;
+  color: #333;
+  border: 0;
+  border-radius: 18px;
+  padding: 14px 28px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.wrapper:hover .itemBtn {
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+.itemImg {
+  width: 100%;
+  display: block;
+  max-height: 100%;
+  object-fit: cover;
+  transition: all 0.8s;
+}
+
+.wrapper:hover .itemImg {
+  scale: 1.05;
+}
+
+.itemName {
+  font-size: 15px;
+  color: rgb(85, 85, 85);
+  margin: 6px 0 3px;
+}
+.itemPrice {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@keyframes showItem {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

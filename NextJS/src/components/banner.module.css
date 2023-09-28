@@ -1,0 +1,44 @@
+.banner {
+  height: 70vh;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../public//images/banner2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bannerTextContainer {
+  text-align: center;
+  color: #fff;
+}
+.bannerTextContainer p {
+  font-size: 21px;
+  padding: 0 15px;
+}
+
+.bannerTextContainer p:first-child {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .bannerTextContainer p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bannerTextContainer p {
+    font-size: 18px;
+  }
+}

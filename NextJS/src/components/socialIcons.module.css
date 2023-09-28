@@ -1,0 +1,11 @@
+.iconsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.iconsContainer img {
+  width: 22px;
+  cursor: pointer;
+}
